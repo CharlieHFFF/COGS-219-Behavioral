@@ -22,8 +22,10 @@
     function generateRandomZeroOrOne() {
       return Math.round(Math.random());
     };
-    
-    const filename = `${subject_id}.csv`;
+
+    const ran_subject_id = jsPsych.randomization.randomID(10);
+	  
+    const filename = `${ran_subject_id}.csv`;
             
     const indicator = generateRandomZeroOrOne();
 
